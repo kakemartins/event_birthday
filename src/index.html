@@ -8,17 +8,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/celebracao.png" alt="celebração">
             <p class="hero__text">
-                Meu Aniversário será em 10d 20h 30m 40s
+                Meu Aniversário será em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Ana Marina - Jardim Serrano - Votorantim/SP
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>O que levar</b>
+                        Sua bebida
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        03/02/2025 às 13hrs
+                    </li>
+                </ul>
+                <a class="button button--primary" href="#">Confirmar presença</a>
+            </div>
         </div>
     </header>
+
+    <section class="event event--churrasco">
+        <div class="container" data-aos="fade-up-right" data-aos-duration="2000">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Churrasco e bate papo</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsam odit recusandae libero hic error quisquam itaque laboriosam molestias praesentium. Iure commodi odit amet quasi excepturi laboriosam quisquam sequi aperiam?
+                </p>
+            </div>
+            <img class="event__image" src="images/carne.jpg" alt="Churrasco">
+        </div>
+    </section>
+    <section class="event event--games event--image-left">
+        <div class="container" data-aos="fade-up-left" data-aos-duration="2000">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Mini Campeonato de Games</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsam odit recusandae libero hic error quisquam itaque laboriosam molestias praesentium. Iure commodi odit amet quasi excepturi laboriosam quisquam sequi aperiam?
+                </p>
+            </div>
+            <img class="event__image" src="images/games.jpg" alt="Games">
+        </div>
+    </section>
+    <section class="event event--bolo">
+        <div class="container" data-aos="fade-up-right" data-aos-duration="2000">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Bolo Delicioso</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsam odit recusandae libero hic error quisquam itaque laboriosam molestias praesentium. Iure commodi odit amet quasi excepturi laboriosam quisquam sequi aperiam?
+                </p>
+            </div>
+            <img class="event__image" src="images/bolo.webp" alt="Bolo de Aniversário">
+        </div>
+    </section>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
